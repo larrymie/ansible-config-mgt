@@ -7,8 +7,8 @@
   tasks:
   - name: ensure wireshark is at the latest version
     yum:
-      name: wireshark
-        state: latest
+      name: wireshark 
+      state: latest
 
 
 #-------------------------------------
