@@ -18,7 +18,6 @@ mysql_enabled_on_startup: true
 
 # Whether my.cnf should be updated on every run.
 overwrite_global_mycnf: true
-
 # The following variables have a default value depending on operating system.
 # mysql_config_file: /etc/my.cnf
 # mysql_config_include_dir: /etc/my.cnf.d
@@ -107,17 +106,17 @@ mysql_config_include_files: []
 
 # Databases.
 mysql_databases: []
-#   - name: example
-#     collation: utf8_general_ci
-#     encoding: utf8
-#     replicate: 1
+   - name: tooling
+     collation: utf8_general_ci
+     encoding: utf8
+     replicate: 1
 
 # Users.
 mysql_users: []
-#   - name: example
-#     host: 127.0.0.1
-#     password: secret
-#     priv: *.*:USAGE
+   - name: webaccess
+     host: 0.0.0.0
+     password: secret
+     priv: '*.*:ALL,GRANT'
 
 # Replication settings (replication is only enabled if master/user have values).
 mysql_server_id: "1"
