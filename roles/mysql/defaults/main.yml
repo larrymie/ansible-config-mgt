@@ -18,6 +18,7 @@ mysql_enabled_on_startup: true
 
 # Whether my.cnf should be updated on every run.
 overwrite_global_mycnf: true
+
 # The following variables have a default value depending on operating system.
 # mysql_config_file: /etc/my.cnf
 # mysql_config_include_dir: /etc/my.cnf.d
