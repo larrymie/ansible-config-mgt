@@ -8,7 +8,7 @@
 [db]
 172.31.30.74 ansible_ssh_user='ec2-user' 
 
-[lb]
+[load balancer]
 172.31.41.130 ansible_ssh_user='ubuntu'
 
 [deployment:children]
