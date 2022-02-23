@@ -39,17 +39,18 @@
     }
 }    
 
-    stage ('package') {
+    stage ('Deploy') {
       steps {
         script {
-          sh 'echo "Deploying to dev" '
+          sh 'echo "Deploying to Dev" '
         }
       }
 
-    stage("clean Up")
-      steps {  
-        cleanWS()
+    stage("clean Up") {
+       steps  { 
+        cleanWs()
      }
-    }
+    } 
+      
+        
              
-}  
