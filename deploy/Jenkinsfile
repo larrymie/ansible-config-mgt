@@ -45,9 +45,13 @@
         }
       }
 
+    }
+
     stage("clean Up") {
        steps  { 
         cleanWs()
      }
     } 
       
+    }
+}      
