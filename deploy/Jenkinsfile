@@ -1,4 +1,4 @@
- pipeline {
+  pipeline {
     agent any
 
   stages {
@@ -8,8 +8,7 @@
               deleteDir()
             }
           }
-      }
-  stage {
+        }
     stage('Build') {
       steps {
         script {
@@ -26,16 +25,13 @@
         }
       }
     }
-    }
-}
-
-    stage ('package') {
+    
+    stage ('Package') {
       steps {
         script {
-          sh 'echo "packaging App" '
+          sh 'echo "Packaging App" '
         }
       }
-    }
     }
     
     stage ('Deploy') {
