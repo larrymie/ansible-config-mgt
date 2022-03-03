@@ -1,0 +1,7 @@
+[nginx]
+172.31.11.130 ansible_ssh_user='ec2-user'
+
+[db]
+172.31.15.216 ansible_ssh_user='ubuntu'
+
+
