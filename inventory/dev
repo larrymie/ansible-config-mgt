@@ -4,4 +4,5 @@
 [db]
 172.31.15.216 ansible_ssh_user='ubuntu'
 
-
+[todo]
+172.31.1.178 ansible_ssh_user='ec2-user'
